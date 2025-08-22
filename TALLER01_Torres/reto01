@@ -1,0 +1,25 @@
+/**************************************************************************************
+ * Fecha: 21/08/2025
+ * Autor: Karol Dayan Torres Vides
+ * Materia: Sistemas Operativos
+ * Tema: Reto01
+ * Objetivo: 
+*************************************************************************************/
+#include <string.h>
+#include <stdio.h>
+#include <stdlib.h>
+int main(){
+    char *p;//declaramos una variable llamada p de tipo char con un apuntador
+    char *q=NULL;//declaramos q de la misma forma y le asignamos NULL
+    printf("Address of p=%s\n", p);/*Para poder visualizar la dirección de p colocamos este printf, p 
+    para ver la dirección de memoria lo correcto es usar %s*/
+
+    strcpy(p,"Hello, I´m the best in Operating Sistems!!!!!!!");//copia esta frase en p
+    printf("%s\n", p);
+    printf("About to copy \"Goodbye\" to q\n");//
+    strcpy(q,"Goodbye");//Copiamos en q el mensaje Goodbye
+    printf("String copied\n");
+    printf("q=%s\n", q);//mostramos por pantalla la dirección de q 
+    return 0;
+
+}
